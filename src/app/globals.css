@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --bgColor-default: #f3f4f6;
 }
 
 @theme inline {
@@ -14,4 +15,128 @@
 
 .font-poppins {
   font-family: var(--font-poppins), var(--font-geist-sans), sans-serif;
+}
+
+.markdown-body {
+  background: white !important;
+  color: black !important;
+}
+
+/* add some beautiful styles to make the markdown looks more cool */
+.markdown-body pre,
+.markdown-body code {
+  background: #f3f4f6 !important;
+  color: #1e293b !important;
+}
+
+.markdown-body a {
+  color: #3b82f6 !important;
+  text-decoration: underline !important;
+}
+
+/* Custom Markdown/markdown-body Enhancements */
+.markdown-body {
+  --tw-markdown-body-body: #22223b;
+  --tw-markdown-body-headings: #1d3557;
+  --tw-markdown-body-links: #2563eb;
+  --tw-markdown-body-bold: #1d3557;
+  --tw-markdown-body-codes: #d7263d;
+  --tw-markdown-body-pre-bg: #f3f4f6;
+  --tw-markdown-body-pre-code: #22223b;
+  --tw-markdown-body-hr: #e0e7ef;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-family: var(--font-poppins), var(--font-geist-sans), sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.markdown-body pre {
+  background: #f3f4f6 !important;
+  color: #22223b !important;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  font-size: 1rem;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+.markdown-body code {
+  background: #f1f5f9 !important;
+  color: #d7263d !important;
+  border-radius: 0.4em;
+  padding: 0.2em 0.4em;
+  font-size: 0.95em;
+}
+
+.markdown-body blockquote {
+  border-left: 4px solid #2563eb;
+  background: #f1f5fa;
+  color: #334155;
+  padding: 0.75em 1.25em;
+  border-radius: 0.5em;
+  font-style: italic;
+  margin: 1.5em 0;
+}
+
+.markdown-body table {
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.04);
+}
+
+.markdown-body tr {
+  background: #f8fafc;
+}
+
+.markdown-body th {
+  background: #e0e7ef;
+  color: #1d3557;
+  font-weight: 600;
+}
+
+.markdown-body td,
+.markdown-body th {
+  border: 1px solid #e0e7ef;
+  padding: 0.75em 1em;
+}
+
+.markdown-body img {
+  border-radius: 0.75em;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.markdown-body table {
+  overflow: hidden !important;
+}
+
+.markdown-body td {
+  background-color: white !important;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+}
+
+.h-custom {
+  height: calc(100vh - 85px)
+}
+
+.group:hover .markdown-body{
+  background-color: #f0fdf4 !important;
+  transition: 0 !important;
+}
+.group:hover tt{
+  background-color: #447b55 !important;
 }

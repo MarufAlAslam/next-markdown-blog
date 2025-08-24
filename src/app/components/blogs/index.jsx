@@ -19,10 +19,12 @@ const Blogs = () => {
 
     return (
         <div>
-            <div className="grid lg:grid-cols-1 md:grid-cols-1 sm:grid-cols-1 grid-cols-1 gap-5">
-                {blogs.map((blog) => (
-                    <SingleBlog key={blog.id} blog={blog} />
-                ))}
+            <div className="w-full flex flex-col items-center justify-center">
+                <div className="flex flex-col w-full">
+                    {blogs.map((blog) => (
+                        <SingleBlog key={blog.id} blog={blog} />
+                    ))}
+                </div>
             </div>
         </div>
     )
