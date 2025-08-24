@@ -1,9 +1,10 @@
 import React from 'react'
+import Blogs from './components/blogs'
 
 const Homepage = () => {
   return (
-    <div>
-      <h1>Welcome to the Homepage</h1>
+    <div className='p-10 bg-black min-h-screen'>
+      <Blogs />
     </div>
   )
 }
