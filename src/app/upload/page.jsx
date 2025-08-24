@@ -37,16 +37,16 @@ export default function UploadPage() {
         onSubmit={handleUpload}
         className="bg-white shadow-lg rounded-2xl p-8 flex flex-col gap-4 w-full max-w-md border border-gray-200"
       >
-        <h2 className="text-2xl font-bold text-blue-700 mb-2">Upload Markdown File</h2>
+        <h2 className="text-2xl font-bold text-green-700 mb-2">Upload Markdown File</h2>
         <input
           type="file"
           accept=".md"
           ref={fileInput}
-          className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100 border border-gray-300 rounded-lg p-2"
+          className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100 border border-gray-300 rounded-lg p-2"
         />
         <button
           type="submit"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-6 rounded-lg transition"
+          className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition"
         >
           Upload
         </button>

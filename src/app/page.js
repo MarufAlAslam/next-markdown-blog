@@ -8,7 +8,7 @@ const Homepage = () => {
       <Blogs />
 
       {/* footer */}
-      <footer className="text-center pt-8 pb-5 text-gray-500 text-base w-full">
+      <footer className="text-center pt-12 pb-10 text-gray-500 text-base w-full">
         <hr className="mb-4 border-t border-gray-200" />
         <div className='flex md:flex-row flex-col justify-center items-center gap-2'>
           <span className="font-semibold">Developer:</span> Maruf H.

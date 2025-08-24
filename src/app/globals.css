@@ -30,8 +30,9 @@
 }
 
 .markdown-body a {
-  color: #3b82f6 !important;
-  text-decoration: underline !important;
+  color: #008235 !important;
+  text-decoration: none !important;
+  font-weight: 500 !important;
 }
 
 /* Custom Markdown/markdown-body Enhancements */

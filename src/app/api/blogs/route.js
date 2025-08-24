@@ -10,6 +10,7 @@ export async function GET() {
     const filePath = path.join(blogsDir, filename);
     const fileContent = fs.readFileSync(filePath, 'utf-8');
     const { data, content } = matter(fileContent);
+    const stats = fs.statSync(filePath);
     return {
       id: idx,
       title: data.title || filename.replace('.md', ''),
@@ -17,6 +18,7 @@ export async function GET() {
       ...data,
       excerpt: content.slice(0, 200) + (content.length > 200 ? '...' : ''),
       content, // full markdown content
+      uploadDate: stats.birthtime,
     };
   });
 
