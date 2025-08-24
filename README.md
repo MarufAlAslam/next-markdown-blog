@@ -1,3 +1,42 @@
+
+# Next Markdown Blog
+
+This is a simple markdown-powered blog built with [Next.js](https://nextjs.org). Blog posts are written in markdown files and rendered with full GitHub-style formatting.
+
+## Features
+
+- Write blog posts in markdown (`.md`) files inside `public/blogs/`
+- GitHub Flavored Markdown (GFM) support: tables, checkboxes, strikethrough, etc.
+- GitHub-style appearance using `github-markdown-css`
+- Live reload and instant updates when you add or edit markdown files
+
+## Usage
+
+1. Place your markdown files in the `public/blogs/` folder. Example:
+
+	```markdown
+	---
+	title: My First Post
+	---
+
+	Welcome to my blog!
+	```
+
+2. Start the development server:
+
+	```bash
+	npm run dev
+	```
+
+3. Visit [http://localhost:3000](http://localhost:3000) to see your blog posts listed and rendered.
+
+## Customization
+
+- To change the blog layout or styling, edit `src/app/components/blogs/index.jsx`.
+- To add more markdown features, see the `react-markdown` and `remark-gfm` documentation.
+
+---
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started

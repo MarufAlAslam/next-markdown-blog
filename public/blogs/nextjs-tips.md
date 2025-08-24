@@ -1,6 +1,4 @@
----
 title: Next.js Tips
----
 
 Here are some tips for working with Next.js:
 
@@ -15,3 +13,4 @@ export default function Page() {
   return <div>Hello Next.js!</div>;
 }
 ```
+
