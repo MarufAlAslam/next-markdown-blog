@@ -26,7 +26,7 @@ export default function RootLayout({ children }) {
           <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
             <Link href="/" className="text-3xl font-bold text-green-700 tracking-tight">
               {/* <h1 className="md:text-3xl mb-0 leading-tight text-2xl font-bold text-green-700 tracking-tight">MD.Blogs</h1> */}
-              <Image src={"/logo.png"} alt="Logo" width={40} height={40} className="inline-block mr-2 w-40 h-auto" unoptimized/>
+              <Image src={"/logo.png"} alt="Logo" width={40} height={40} className="inline-block mr-2 md:w-40 w-30 h-auto" unoptimized/>
               <span className="text-xs text-gray-300 font-mono inline-block">by Maruf H.</span>
             </Link>
             {/* upload button */}
