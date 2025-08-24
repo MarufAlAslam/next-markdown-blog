@@ -24,9 +24,13 @@ export default function RootLayout({ children }) {
         <header className="w-full shadow-sm bg-white/80 backdrop-blur sticky top-0 z-10">
           <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
             <Link href="/" className="text-3xl font-bold text-green-700 tracking-tight">
-              <h1 className="md:text-3xl text-2xl font-bold text-green-700 tracking-tight">MdBlogs</h1>
+              <h1 className="md:text-3xl mb-0 leading-tight text-2xl font-bold text-green-700 tracking-tight">MD.Blogs</h1>
+              <span className="text-xs text-gray-400 font-mono block">by Maruf H.</span>
             </Link>
-            <span className="text-xs text-gray-400 font-mono">by Maruf H.</span>
+            {/* upload button */}
+            <Link href="/upload" className="bg-green-700 hover:bg-green-900 text-white font-semibold py-2 px-4 rounded-lg transition">
+              Upload
+            </Link>
           </div>
         </header>
         <main className="flex-1 w-full flex flex-col items-center justify-start">
