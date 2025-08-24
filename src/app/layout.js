@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
       >
         <header className="w-full shadow-sm bg-white/80 backdrop-blur sticky top-0 z-10">
           <div className="max-w-7xl mx-auto px-4 py-6 flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-green-700 tracking-tight">MdBlogs</h1>
+            <h1 className="md:text-3xl text-2xl font-bold text-green-700 tracking-tight">MdBlogs</h1>
             <span className="text-xs text-gray-400 font-mono">by Maruf H.</span>
           </div>
         </header>
