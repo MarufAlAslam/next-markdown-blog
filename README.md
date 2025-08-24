@@ -78,8 +78,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Developer Info
 
-**Author:** Maruf Al Aslam  
-**GitHub:** [MarufAlAslam](https://github.com/MarufAlAslam)  
+**Author:** Maruf H.  
+**GitHub:** [Maruf H.](https://github.com/MarufAlAslam)  
 **Email:** marufalaslam@gmail.com
 
 # next-markdown-blog
