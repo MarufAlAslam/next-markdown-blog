@@ -5,7 +5,7 @@ import remarkGfm from 'remark-gfm';
 const SingleBlog = ({ blog }) => {
     return (
         <article className="relative group bg-white/95 shadow-xl rounded-3xl md:p-10 p-5 mb-4 border-l-8 border-green-900/80 hover:border-green-700/90 cursor-pointer transition-all duration-300 overflow-hidden">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex md:flex-row flex-col items-start md:items-center gap-3 mb-6">
                 <div className="bg-green-100 text-green-700 rounded-full p-2 shadow-sm">
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21H5a2 2 0 01-2-2V7a2 2 0 012-2h4l2-2 2 2h4a2 2 0 012 2v12a2 2 0 01-2 2z" /></svg>
                 </div>
