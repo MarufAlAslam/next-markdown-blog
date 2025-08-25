@@ -1,5 +1,6 @@
 "use client";
 import React, { useRef, useState } from "react";
+const isServerless = process.env.NODE_ENV === "production";
 
 export default function UploadPage() {
   const fileInput = useRef();
@@ -55,3 +56,26 @@ export default function UploadPage() {
     </div>
   );
 }
+      <h2 className="text-2xl font-bold text-green-700 mb-2">Upload Markdown File</h2>
+      {isServerless ? (
+        <div className="text-yellow-600 bg-yellow-100 border border-yellow-300 rounded p-4 mb-4">
+          <strong>Uploads are disabled:</strong> This site is running on a serverless host (like Vercel or Netlify) and cannot accept file uploads.<br />
+          Please use the local development environment to upload markdown files.
+        </div>
+      ) : (
+        <>
+          <input
+            type="file"
+            accept=".md"
+            ref={fileInput}
+            className="file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-green-50 file:text-green-700 hover:file:bg-green-100 border border-gray-300 rounded-lg p-2"
+          />
+          <button
+            type="submit"
+            className="bg-green-600 hover:bg-green-700 text-white font-semibold py-2 px-6 rounded-lg transition"
+          >
+            Upload
+          </button>
+          {message && <div className="text-center text-sm text-gray-600 mt-2">{message}</div>}
+        </>
+      )}
